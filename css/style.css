@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+a {
+    text-decoration: none;
+}
+
+
+/* .title {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #101010;
+}
+
+.pace {
+    pointer-events: none;
+    user-select: none;
+    z-index: 2000;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    border: 0px;
+    height: 1px;
+    overflow: hidden;
+    background: #1b1b1b;
+}
+
+.pace .pace-progress {
+    box-sizing: border-box;
+    transform: translate3d(0, 0, 0);
+    max-width: 400px;
+    position: fixed;
+    z-index: 2000;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background: grey;
+}
+
+.pace.pace-inactive {
+    display: none;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+    overflow: hidden;
+    position: fixed;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+} */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 32px;
+    width: 960px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    color: #1d1d1d;
+}
+
+.gridbox {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.gridbox h2 {
+    margin-left: 38px;
+}
+
+@media only screen and (max-width:800px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        max-width: 80%;
+        margin-left: 13%;
+        grid-template-areas: "uxuiskills" "frontEnd" "tools";
+    }
+    .gridbox {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        width: 960px;
+        margin-top: 0;
+        margin-left: 13%;
+        margin-right: 13%;
+        grid-gap: 32px;
+        grid-template-areas: "uxuiskills frontEnd" "tools";
+    }
+}
